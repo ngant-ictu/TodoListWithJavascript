@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draggle Topic</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+   <main>
+    <section class="wrap">
+        <h3>List Ordering</h3>
+        <section 
+            class="wrap__list"
+            ondragover="onDragOver(event)"
+            ondrop="onDrop(event)"
+        >
+            <article 
+                id="wrap__list-item-1" 
+                class="wrap__list-item"
+                draggable="true"
+                ondragstart="onDragStart(event)"
+                ondragover="onDragOver(event)"
+                ondrop="onDrop(event)"
+                ondragend="onDragEnd(event)"
+                >
+                <p>🍗 Chicken</p>
+                <span class="drag-handle is-hover"></span>
+            </article>
+            <article 
+                id="wrap__list-item-2" 
+                class="wrap__list-item"
+                draggable="true"
+                ondragstart="onDragStart(event)"
+                ondragend="onDragEnd(event)"
+                >
+                <p>🥩 Meat</p>
+                <span class="drag-handle is-hover"></span>
+            </article>
+            <article 
+                id="wrap__list-item-3" 
+                class="wrap__list-item"
+                draggable="true"
+                ondragstart="onDragStart(event)"
+                ondragend="onDragEnd(event)"
+                >
+                <p>🥦 Vegetable</p>
+                <span class="drag-handle is-hover"></span>
+            </article>
+            <article 
+                id="wrap__list-item-4" 
+                class="wrap__list-item"
+                draggable="true"
+                ondragstart="onDragStart(event)"
+                ondragend="onDragEnd(event)"
+                >
+                <p>🥞 Cake</p>
+                <span class="drag-handle is-hover"></span>
+            </article>
+        </section>
+    </section>
+    <section class="wrap list_dropzone">
+        <h3>Delivered</h3>
+        <section 
+            class="wrap__list"
+            ondragover="onDragOver(event)"
+            ondrop="onDrop(event)"
+            >
+            
+        </section>
+    </section>
+   </main>
+    <footer>
+        <p>&copy; 2023 #100daysOfCode</p>
+    </footer>
+
+    <script src="./main.js" rel="javascript" ></script>
+</body>
+</html>
